@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat", '"Open Sans"', "sans-serif"],
+        sans: ['"Open Sans"', "sans-serif"],
+        display: ["Montserrat", "sans-serif"],
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
-}
+};
