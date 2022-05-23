@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${GA_ID}');
         `}
       </Script>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
