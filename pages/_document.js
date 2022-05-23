@@ -10,11 +10,16 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-         {/*LOAD FONTS HERE*/}
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;500&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
-        <Main />
-        <NextScript />
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );
