@@ -1,12 +1,13 @@
 const questions = [
   {
+    id: 1,
     question:
       "You’re really busy at work and a colleague is telling you their life story and personal woes. You:",
     answers: [
       {
         id: 1,
         text: "Don’t dare to interrupt them",
-        weight: 1,
+        weight: -1,
       },
       {
         id: 2,
@@ -16,7 +17,7 @@ const questions = [
       {
         id: 3,
         text: "Listen, but with only with half an ear",
-        weight: -1,
+        weight: 1,
       },
       {
         id: 4,
@@ -26,6 +27,7 @@ const questions = [
     ],
   },
   {
+    id: 2,
     question:
       "You’ve been sitting in the doctor’s waiting room for more than 25 minutes. You:",
     answers: [
@@ -41,7 +43,7 @@ const questions = [
       },
       {
         id: 7,
-        text: "Explain to other equally impatient people in the room that the doctor is always running late",
+        text: "Explain to other people in the room that the doctor is always running late",
         weight: 1,
       },
       {
@@ -52,6 +54,7 @@ const questions = [
     ],
   },
   {
+    id: 3,
     question:
       "You’re having an animated discussion with a colleague regarding a project that you’re in charge of. You:",
     answers: [

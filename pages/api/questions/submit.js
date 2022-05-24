@@ -1,11 +1,11 @@
 import answersById from "../../../data/answersById";
 
-export default function handler(res, req) {
+export default function handler(req, res) {
   const { method } = req;
 
   switch (method) {
     case "POST":
-      return submit(res, req);
+      return submit(req, res);
     default:
       return res.status(405).json({
         error: "Method not allowed",
@@ -13,17 +13,18 @@ export default function handler(res, req) {
   }
 }
 
-function submit(res, req) {
+function submit(req, res) {
   const {
     body: { answerIds },
   } = req;
 
   const weight = answerIds.reduce((acc, answerId) => {
-    const { weight } = answersById[answerId];
-    return acc + weight;
+    const answer = answersById[answerId];
+    return acc + answer.weight;
   }, 0);
 
   res.status(200).json({
     weight,
+    type: weight > 0 ? "extrovert" : "introvert",
   });
 }

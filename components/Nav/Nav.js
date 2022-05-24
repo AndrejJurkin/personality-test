@@ -28,9 +28,11 @@ export default function Nav({ dark, showDivider, offsetTop }) {
               <li key={index}>{link.name}</li>
             ))}
           </ul>
-          <Button primary size="small">
-            Take the Test
-          </Button>
+          <Link href="/test" passHref>
+            <a>
+              <Button primary>Take the Test</Button>
+            </a>
+          </Link>
         </div>
       </nav>
       {offsetTop && <div className="h-24" />}

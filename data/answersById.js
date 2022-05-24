@@ -1,10 +1,15 @@
 import questions from "./questions";
 
 const answersById = questions.reduce((acc, question) => {
-  const { id, answers } = question;
+  const { answers } = question;
   return {
     ...acc,
-    [id]: answers,
+    ...answers.reduce((acc, answer) => {
+      return {
+        ...acc,
+        [answer.id]: answer,
+      };
+    }, {}),
   };
 }, {});
 
