@@ -7,7 +7,7 @@ export default function Question({
   onAnswerClick,
 }) {
   return (
-    <div>
+    <>
       <div className="mb-8 font-display">{question.question}</div>
       <div className="flex flex-col gap-2">
         {question.answers.map((answer) => (
@@ -19,6 +19,6 @@ export default function Question({
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }

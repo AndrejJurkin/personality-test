@@ -11,7 +11,7 @@ export default function Test({ questions }) {
   // A map of question id to answer id
   const [answers, setAnswers] = React.useState({});
 
-  const [submit, { loading, error }] = useLazyRequest(
+  const [submit, { loading }] = useLazyRequest(
     "/api/questions/submit/",
     {
       method: "POST",
@@ -57,9 +57,9 @@ export default function Test({ questions }) {
       <Nav dark showDivider offsetTop />
       <main className="overflow-hidden pt-12 text-center">
         <section className="section-padding mx-auto max-w-3xl text-left text-slate-800">
-          <div className="lg:5xl mb-4 font-display text-2xl md:text-3xl">
+          <h1 className="lg:5xl mb-4 font-display text-2xl md:text-3xl">
             Question {questionIndex + 1}/{questions?.length}
-          </div>
+          </h1>
           <Question
             question={question}
             selectedAnswerId={answers[question.id]}
@@ -69,6 +69,7 @@ export default function Test({ questions }) {
             <Button
               onClick={handlePreviousClick}
               disabled={questionIndex === 0 || loading}
+              data-testid="previous-button"
             >
               Previous
             </Button>
@@ -76,6 +77,7 @@ export default function Test({ questions }) {
               onClick={handleNextClick}
               disabled={!answers[question.id] || loading}
               outline
+              data-testid="next-button"
             >
               {nextButtonText}
             </Button>

@@ -20,7 +20,7 @@ export default function Nav({ dark, showDivider, offsetTop }) {
             "dark:text-slate-800"
           )}
         >
-          <Link href="/">
+          <Link href="/" data-testid="app-logo">
             <a className="font-display text-xl">Quiso</a>
           </Link>
           <ul className="flex hidden flex-row gap-12 text-sm md:flex">

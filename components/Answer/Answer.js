@@ -10,6 +10,7 @@ export default function Answer({ answer, selected, onAnswerClick }) {
       className={clsx("cursor-pointer rounded-md border p-3", {
         ["bg-gray-100"]: selected,
       })}
+      data-testid={answer.id}
     >
       <span className="select-none text-sm">{answer.text}</span>
     </div>

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav renders component unchanged 1`] = `
+<div>
+  <nav
+    class="absolute top-0 left-0 z-10 h-20 w-full px-4 text-white md:px-12 lg:px-24"
+  >
+    <div
+      class="mx-auto flex h-full max-w-5xl flex-row items-center justify-between dark:text-slate-800"
+    >
+      <a
+        class="font-display text-xl"
+        href="/"
+      >
+        Quiso
+      </a>
+      <ul
+        class="flex hidden flex-row gap-12 text-sm md:flex"
+      >
+        <li>
+          Home
+        </li>
+        <li>
+          About
+        </li>
+        <li>
+          Contact
+        </li>
+      </ul>
+      <a
+        href="/test"
+      >
+        <button
+          class="button button--primary button--medium"
+        >
+          Take the Test
+        </button>
+      </a>
+    </div>
+  </nav>
+</div>
+`;

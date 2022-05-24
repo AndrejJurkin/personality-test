@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Question renders component unchanged 1`] = `
+<div>
+  <div
+    class="mb-8 font-display"
+  >
+    Question Title
+  </div>
+  <div
+    class="flex flex-col gap-2"
+  >
+    <div
+      class="cursor-pointer rounded-md border p-3 bg-gray-100"
+      data-testid="1"
+    >
+      <span
+        class="select-none text-sm"
+      >
+        Question Answer 1
+      </span>
+    </div>
+    <div
+      class="cursor-pointer rounded-md border p-3"
+      data-testid="2"
+    >
+      <span
+        class="select-none text-sm"
+      >
+        Question Answer 2
+      </span>
+    </div>
+    <div
+      class="cursor-pointer rounded-md border p-3"
+      data-testid="3"
+    >
+      <span
+        class="select-none text-sm"
+      >
+        Question Answer 3
+      </span>
+    </div>
+    <div
+      class="cursor-pointer rounded-md border p-3"
+      data-testid="4"
+    >
+      <span
+        class="select-none text-sm"
+      >
+        Question Answer 4
+      </span>
+    </div>
+  </div>
+</div>
+`;
