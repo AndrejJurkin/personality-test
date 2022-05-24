@@ -1,7 +1,7 @@
 import { act, render } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import questions from "../../../data/questions";
-import Test from "../index";
+import questions from "../data/questions";
+import Test from "../pages/test";
 
 describe("Test Page", () => {
   it("renders Nav", () => {
