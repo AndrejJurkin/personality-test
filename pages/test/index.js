@@ -96,6 +96,5 @@ export async function getServerSideProps() {
     props: {
       questions: res.questions,
     },
-    revalidate: 10,
   };
 }
