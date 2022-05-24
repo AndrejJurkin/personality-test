@@ -88,7 +88,7 @@ export default function Test({ questions }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(getAbsoluteUrl("/api/questions")).then((res) =>
     res.json()
   );
@@ -96,5 +96,6 @@ export async function getServerSideProps() {
     props: {
       questions: res.questions,
     },
+    revalidate: 10,
   };
 }
