@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -6,9 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Montserrat", '"Open Sans"', "sans-serif"],
+        sans: ['"Open Sans"', "sans-serif"],
+        display: ["Montserrat", "sans-serif"],
+      },
+      backgroundImage: {
+        "hero-pattern": "url('hero-pattern.svg')",
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
-}
+};

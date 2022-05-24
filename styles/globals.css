@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section-padding {
+    @apply px-6 sm:px-8 md:px-16 lg:px-24;
+  }
+
+  .button {}
+
+  .button--small {
+    @apply py-3 px-4 text-xs;
+  }
+
+  .button--medium {
+    @apply py-2 px-6 text-sm;
+  }
+
+  .button--large {
+    @apply py-3 px-10;
+  }
+
+  .button--primary {
+    @apply bg-fuchsia-500 hover:bg-fuchsia-400 text-white font-medium rounded-lg;
+  }
+
+  .button--disabled {
+    @apply opacity-40 cursor-not-allowed;
+  }
+
+  .button--outline {
+    @apply bg-transparent border border-fuchsia-500 hover:border-fuchsia-400 text-fuchsia-500 hover:text-fuchsia-400 font-medium rounded-lg;
+  }
+}
+
+.hero--clipped {
+  clip-path: ellipse(170% 90% at 50% 5%);
+}
+
+@media (min-width: 768px) {
+  .hero--clipped {
+    clip-path: ellipse(130% 90% at 40% 5%)
+  }
+}
