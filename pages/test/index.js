@@ -88,7 +88,7 @@ export default function Test({ questions }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(getAbsoluteUrl("/api/questions")).then((res) =>
     res.json()
   );
